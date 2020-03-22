@@ -1,0 +1,210 @@
+
+* {
+  font-family: "Bellota Text";
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+h1 {
+  color: #ecf0f1;
+  font-family: "Bellota Text";
+}
+
+h4 {
+  color: #ecf0f1;
+  font-family: "Bellota Text";
+}
+
+p {
+  color: #ecf0f1;
+}
+
+body {
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.712)),
+  //   url(/images/movies5.jpeg);
+  background-image: linear-gradient(to bottom, #000000, #160105, #220207, #2c0205, #360000);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+label {
+  color: #fff;
+}
+
+.btn {
+  font-family: "Bellota Text" !important;
+}
+
+.btn:hover {
+  color: #1d1d1d;
+}
+.card-body {
+  padding: 75px;
+  background-color: #00000054;
+}
+
+.dashboard-body {
+  padding-top: 150px;
+  background-image: linear-gradient(to bottom, #000000, #160105, #220207, #2c0205, #360000);
+}
+
+li.dropdown:last-child .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.form-control {
+  background-color: #3d3d3d;
+  border: none;
+  height: 50px;
+}
+
+.login .fas {
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 35px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #dbcbcb;
+  border-bottom: 2px solid #b31515;
+}
+
+.navbar {
+  background-color: #000000;
+}
+
+.nav-item a {
+  color: rgb(212, 212, 212) !important;
+}
+
+.register .fas {
+  position: absolute;
+  margin-left: -45px;
+  margin-top: 10px;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #919191;
+} /* WebKit, Blink, Edge */
+.form-control:focus::-webkit-input-placeholder {
+  color: #919191;
+}
+.form-control:-moz-placeholder {
+  color: #919191;
+} /* Mozilla Firefox 4 to 18 */
+.form-control:focus::-moz-placeholder {
+  color: #919191;
+}
+.form-control::-moz-placeholder {
+  color: #919191;
+} /* Mozilla Firefox 19+ */
+.form-control:focus::-moz-placeholder {
+  color: #919191;
+}
+.form-control:-ms-input-placeholder {
+  color: #919191;
+} /* Internet Explorer 10-11 */
+.form-control:focus::-ms-input-placeholder {
+  color: #919191;
+}
+.form-control::-ms-input-placeholder {
+  color: #919191;
+} /* Microsoft Edge */
+.form-control:focus::-ms-input-placeholder {
+  color: #919191;
+}
+
+/* CAROUSEL */
+
+.swiper-container {
+  transform: translate3D(0, 0, 0);
+  width: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  cursor: pointer;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: transform 450ms ease-in-out
+}
+
+.netflix {
+  img {
+    max-width: 100%;
+    height: auto;
+    // overlay settings
+    opacity: 1;
+    display: block;
+  }
+
+  .swiper-wrapper {
+    margin: 55px 0;
+  }
+}
+
+.netflix h2 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Overlay on movie images */
+
+.container-overlay {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -10%);
+  -ms-transform: translate(-50%, -10%);
+  text-align: center;
+}
+
+.swiper-wrapper:hover .swiper-slide {
+  transform: translate3d(-15%, 0, 0);
+  opacity: .2;
+}
+
+.container-overlay:hover {
+  opacity: 1;
+}
+
+.swiper-wrapper .swiper-slide:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.swiper-slide:hover ~ .swiper-slide {
+  transform: translate3d(15%, 0, 0);
+}

@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="row vertical-center">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body">
+        <h1 class="text-center"><i class="fas fa-user-plus"></i> Register</h1>
+        <%- include("./partials/messages.ejs") %>
+        <form action="/users/register" method="POST">
+          <div class="form-group">
+            <label for="name"></label>
+            <div class="register">
+              <i class="fas fa-user-alt fa-2x" style="color:#c4c4c4"></i>
+              <input
+                type="name"
+                id="name"
+                name="name"
+                class="form-control"
+                placeholder="Enter Name"
+                value="<%= typeof name !== 'undefined' ? name : '' %>"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email"></label>
+            <div class="register">
+              <i class="fas fa-envelope fa-2x" style="color:#c4c4c4"></i>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="Enter Email"
+                value="<%= typeof email !== 'undefined' ? email : '' %>"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password"></label>
+            <div class="register">
+              <i class="fas fa-lock fa-2x" style="color:#c4c4c4"></i>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+                placeholder="Enter Password"
+                value="<%= typeof password !== 'undefined' ? password : '' %>"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password2"></label>
+            <div class="register">
+              <i
+                class="fas fa-exclamation-triangle fa-2x"
+                style="color:#c4c4c4"
+              ></i>
+              <input
+                type="password"
+                id="password2"
+                name="password2"
+                class="form-control"
+                placeholder="Confirm Password"
+                value="<%= typeof password2 !== 'undefined' ? password2 : '' %>"
+              />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Register
+          </button>
+          <p class="mt-3">Have an Account? <a href="login">Login</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
