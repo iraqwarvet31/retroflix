@@ -40,7 +40,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="/users/logout">Logout <%= name %></a>
+          <a class="dropdown-item" href="/users/logout" id="freddy2">Logout <%= name %></a>
         </div>
       </li>
     </ul>
@@ -57,7 +57,7 @@
       <div class="swiper-slide">
         <img src="/images/freddy1.png" alt="" />
         <div class="container-overlay">
-          <a href="/video"><i class="far fa-play-circle fa-3x" style="color:#fff;"></i></a>
+          <a href="/video?id=FREDDY1" id="FREDDY1"><i class="far fa-play-circle fa-3x" style="color:#fff;"></i></a>
         </div>
     </div>
       <div class="swiper-slide">
@@ -250,7 +250,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <img src="/images/freddy4.png" alt="" />
+        <img src="/images/freddy4.jpeg" alt="" />
         <div class="container-overlay">
           <a href="#"><i class="far fa-play-circle fa-3x" style="color:#fff;"></i></a>
         </div>
@@ -320,7 +320,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <img src="/images/freddy4.png" alt="" />
+        <img src="/images/freddy4.jpeg" alt="" />
         <div class="container-overlay">
           <a href=""><a href="#"><i class="far fa-play-circle fa-3x" style="color:#fff;"></i></a></a>
         </div>
@@ -338,27 +338,27 @@
 
 <!-- Initialize Swiper -->
 <script>
-  var swiper = new Swiper(".swiper-container", {
-    slidesPerView: 4,
-    spaceBetween: 4,
-    slidesPerGroup: 2,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 5,
-      },
-      768: {
+      var swiper = new Swiper(".swiper-container", {
         slidesPerView: 4,
-        spaceBetween: 10,
-      },
-      1024: {
-        slidesPerView: 6,
-        spaceBetween: 15,
-      },
-    },
-  });
+        spaceBetween: 4,
+        slidesPerGroup: 2,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+        }      
+      });
 </script>

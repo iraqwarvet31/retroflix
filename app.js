@@ -7,6 +7,9 @@ const session = require("express-session");
 // Passport authentication
 const passport = require("passport");
 
+// Read env file
+require('dotenv').config;
+
 const app = express();
 
 // Passport config
@@ -14,7 +17,7 @@ require("./config/passport.js")(passport);
 
 // DB config
 // const db = require("./config/keys").MongoURI;
-const db = process.env.mongoURI
+const db = process.env.mongoURI;
 
 // Connect to Mongodb
 mongoose

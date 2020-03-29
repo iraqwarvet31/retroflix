@@ -148,27 +148,11 @@ li.dropdown:last-child .dropdown-menu {
 
 /* CAROUSEL */
 .swiper-container {
-  -webkit-transform: translate3D(0, 0, 0);
-          transform: translate3D(0, 0, 0);
-  width: 100%;
   position: relative;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
   cursor: pointer;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-transition: -webkit-transform 450ms ease-in-out;
   transition: -webkit-transform 450ms ease-in-out;
   transition: transform 450ms ease-in-out;
@@ -177,7 +161,7 @@ li.dropdown:last-child .dropdown-menu {
 
 .netflix img {
   max-width: 100%;
-  height: auto;
+  min-height: auto;
   opacity: 1;
   display: block;
 }
