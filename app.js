@@ -16,7 +16,6 @@ const app = express();
 require("./config/passport.js")(passport);
 
 // DB config
-// const db = require("./config/keys").MongoURI;
 const db = process.env.mongoURI;
 
 // Connect to Mongodb
