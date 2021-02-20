@@ -8,7 +8,8 @@ const session = require("express-session");
 const passport = require("passport");
 
 // Read env file
-require('dotenv').config;
+require('dotenv').config();
+
 
 const app = express();
 
@@ -20,7 +21,7 @@ const db = process.env.mongoURI;
 
 // Connect to Mongodb
 mongoose
-  .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect('mongodb+srv://larryolguin:CSPlol86753099@test-cluster1.j3x0i.gcp.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB Connected..."))
   .catch(err => console.log(err));
 
