@@ -21,7 +21,7 @@ const db = process.env.mongoURI;
 
 // Connect to Mongodb
 mongoose
-  .connect('mongodb+srv://larryolguin:CSPlol86753099@test-cluster1.j3x0i.gcp.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB Connected..."))
   .catch(err => console.log(err));
 
